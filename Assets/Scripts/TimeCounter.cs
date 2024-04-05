@@ -14,7 +14,7 @@ public class TimeCounter : MonoBehaviour
     private void Update()
     {
         int time = _gameController.GameTime;
-        if (time > 0)
+        if (time >= 0)
             _timeText.text = time.ToString();
     }
 }
